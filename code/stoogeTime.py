@@ -2,15 +2,15 @@ import timeit
 import stoogesort
 import cleanup
 import randomArray
-#import testLogger
+import testLogger
 
-testName = "Insert"
+testName = "Stooge"
 logName = "sort_tests.csv"
 
 minVal = 0
 maxVal = 10000
-strtN = 300
-nIncr = 200
+strtN = 250
+nIncr = 75
 tests = 10
 
 
@@ -34,7 +34,7 @@ for tst in tstLst:
 
   i += 1
 
-#testLogger.addLogData(logName, results)
+testLogger.addLogData(logName, results)
 
 cleanup.pyc()
 
